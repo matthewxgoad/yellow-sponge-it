@@ -1,3 +1,14 @@
+let inputText = document.querySelector("#input-text");
+let submitEl = document.querySelector("#submit-el");
+let displayedText = document.querySelector("#output-text");
+
+function handleClick(event) {
+    event.preventDefault();
+    let returnedText = spongebobify(inputText.value);
+    displayedText.textContent = returnedText;
+}
+
+
 function spongebobify(input) {
     let output = "";
     for ( let i = 0 ; i < input.length ; i++ ) {
@@ -10,3 +21,5 @@ function spongebobify(input) {
     };
     return output
 };
+
+submitEl.addEventListener("click", handleClick)

@@ -3,13 +3,19 @@
 
 body {
     font-family: 'Merriweather', serif;
+    background-color: #dfe658;
 }
-#main-container {
-    /* min-height: 100%; */
-    /* background: rgb(218, 230, 90) url(./images/pineapple.jpg) top / cover; */
+/* hero {
+    background-image: url("./images/pineapple.jpg");
+    background-color: #dfe658;
+    background-position: center;
+    background-repeat: repeat;
+} */
+/* #main-container {
+    min-height: 100%;
     background-image: url("./images/pineapple.jpg");
     background-color: #dfe658;
     background-position: center;
     background-repeat: repeat;
 
-}
+} */
