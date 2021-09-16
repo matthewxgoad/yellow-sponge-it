@@ -1,0 +1,15 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+}
+#main-container {
+    /* min-height: 100%; */
+    /* background: rgb(218, 230, 90) url(./images/pineapple.jpg) top / cover; */
+    background-image: url("./images/pineapple.jpg");
+    background-color: #dfe658;
+    background-position: center;
+    background-repeat: repeat;
+
+}
