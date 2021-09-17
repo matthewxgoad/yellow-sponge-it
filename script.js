@@ -6,6 +6,9 @@ function handleClick(event) {
     event.preventDefault();
     let returnedText = spongebobify(inputText.value);
     displayedText.textContent = returnedText;
+    // returnedText.select();
+    // returnedText.setSelectionRange(0,99999);
+    navigator.clipboard.writeText(returnedText);
 }
 
 
