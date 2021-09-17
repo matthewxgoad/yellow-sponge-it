@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>yeLlOw SPonGe iT!</title>
 </head>
 <body>
-        <div class="container p-4" id="main-container">
-            <input class="input is-large" type="text" placeholder="Enter text:" id="input-text">
-            <input type="submit" class="button is-success is-fullwidth" value="yeLlOw SPonGe iT!" id="submit-el">
-            <p id="output-text">
+        <div class="container-fluid p-4 bg-warning vh-100" id="main-container">
+            <div class="text-center">
+                <img src="images/spangeberb.png" class="img-max mb-3" alt="Spangeberb">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="input-text" placeholder="Enter text:">
+              </div>
+            
+            <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-success" type="button" id="submit-el">yeLlOw SPonGe iT!</button>
+              </div>
+
+            <h1 id="output-text">
                 Text outputs here.
-            </p>
+            </h1>
         </div>
-    
-    <script src="script.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
