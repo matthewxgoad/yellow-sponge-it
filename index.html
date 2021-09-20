@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>yeLlOw SPonGe iT!</title>
-</head>
-<body>
-        <div class="container-fluid p-4 bg-warning vh-100" id="main-container">
-            <div class="text-center">
-                <img src="images/spangeberb.png" class="img-max mb-3" alt="Spangeberb">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="input-text" placeholder="Enter text and click the button. Text is copied to clipboard.">
-              </div>
-            
-            <div class="d-grid gap-2 mb-3">
-                <button class="btn btn-success" type="button" id="submit-el">yeLlOw SPonGe iT!</button>
-              </div>
+  </head>
+  <body>
+    <div class="container-fluid p-4 bg-warning vh-100" id="main-container">
+        <!-- Image serves as header and home/reload button. -->
+      <div class="text-center" id="hero-img">
+        <img
+          src="images/spangeberb.png"
+          class="img-max mb-3"
+          alt="Spangeberb"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="input-text"
+          placeholder="What are you saying?"
+        />
+      </div>
+      <div class="d-grid gap-2 mb-3">
+        <button class="btn btn-success" type="button" id="submit-el">
+          <strong>SPonGe iT!</strong>
+        </button>
+      </div>
+      <div class="container mb-3 p-4">
+          <h1 id="output-text">
+          </h1>
+      </div>
+      <div
+        class="alert alert-primary alert-dismissible fade text-center fs-6"
+        role="alert"
+        id="clipboard-alert"
+      >
+        <em>Copied to clipboard!</em>
+      </div>
+    </div>
 
-            <h1 id="output-text">
-                Text outputs here.
-            </h1>
-        </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

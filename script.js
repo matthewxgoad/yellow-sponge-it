@@ -1,16 +1,23 @@
+let heroImg = document.querySelector('#hero-img');
 let inputText = document.querySelector("#input-text");
 let submitEl = document.querySelector("#submit-el");
 let displayedText = document.querySelector("#output-text");
+let clipboardAlert = document.querySelector("#clipboard-alert");
 
 function handleClick(event) {
     event.preventDefault();
     let returnedText = spongebobify(inputText.value);
     displayedText.textContent = returnedText;
-    // returnedText.select();
-    // returnedText.setSelectionRange(0,99999);
     navigator.clipboard.writeText(returnedText);
+    hideShowAlert();
 }
 
+function hideShowAlert() {
+    clipboardAlert.classList.add('show');
+    setTimeout( () => {
+        clipboardAlert.classList.remove('show');
+    },2000);
+}
 
 function spongebobify(input) {
     let output = "";
@@ -24,5 +31,11 @@ function spongebobify(input) {
     };
     return output
 };
+function reloadPage() {
+    preventDefault();
+    location.reload();
+    return false();
+}
 
-submitEl.addEventListener("click", handleClick)
+submitEl.addEventListener("click", handleClick);
+heroImg.addEventListener("click", reloadPage);
