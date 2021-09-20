@@ -32,7 +32,6 @@ function spongebobify(input) {
     return output
 };
 function reloadPage() {
-    preventDefault();
     location.reload();
     return false();
 }
