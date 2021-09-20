@@ -25,36 +25,40 @@
   </head>
   <body>
     <div class="container-fluid p-4 bg-warning vh-100" id="main-container">
-      <!-- Image serves as header and home/reload button. -->
-      <div class="text-center" id="hero-img">
-        <img
-          src="images/spangeberb.png"
-          class="img-max mb-3"
-          alt="Spangeberb"
-        />
-      </div>
-      <div class="mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="input-text"
-          placeholder="What are you saying?"
-        />
-      </div>
-      <div class="d-grid gap-2 mb-3">
-        <button class="btn btn-success" type="button" id="submit-el">
-          <strong>SPonGe iT!</strong>
-        </button>
-      </div>
-      <div class="container text-center mb-3 p-4">
-        <h1 id="output-text"></h1>
-      </div>
-      <div
-        class="alert alert-primary alert-dismissible fade text-center fs-6"
-        role="alert"
-        id="clipboard-alert"
-      >
-        <em>Copied to clipboard!</em>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Image serves as header and home/reload button. -->
+          <div class="text-center" id="hero-img">
+            <img
+              src="images/spangeberb.png"
+              class="img-max mb-3"
+              alt="Spangeberb"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="input-text"
+              placeholder="What are you saying?"
+            />
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn btn-success" type="button" id="submit-el">
+              <strong>SPonGe iT!</strong>
+            </button>
+          </div>
+          <div class="container text-center mb-3 p-4">
+            <h1 id="output-text"></h1>
+          </div>
+          <div
+            class="alert alert-primary alert-dismissible fade text-center fs-6"
+            role="alert"
+            id="clipboard-alert"
+          >
+            <em>Copied to clipboard!</em>
+          </div>
+        </div>
       </div>
     </div>
 
